@@ -1,0 +1,51 @@
+{
+  "name": "aigf-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://yourusername.github.io/aigf-webapp",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "build-export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "npm run build-export && gh-pages -d out"
+  },
+  "dependencies": {
+    "next": "14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.294.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.17",
+    "autoprefixer": "^10.4.16",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.55.0",
+    "eslint-config-next": "14.0.4",
+    "gh-pages": "^6.1.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.3%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
